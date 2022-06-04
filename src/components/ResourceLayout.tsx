@@ -1,48 +1,48 @@
-import React from 'react';
 import {
-  Button,
-  useColorMode,
-  Tag,
-  Heading,
-  Text,
-  Link,
   Box,
-  Container,
+  Text,
   Center,
   Flex,
-  VStack,
-  Stack,
-  HStack,
-  Divider,
-  StackDivider,
-  Grid,
-  SimpleGrid,
-  Wrap,
-  WrapItem,
-  GridItem,
+  Link,
+  Tag,
+  useColorMode,
 } from '@chakra-ui/react';
 import { LinkIcon } from '@chakra-ui/icons';
 
-const ResourceLayout = () => {
+interface ResourceData {
+  name: string;
+  link: string;
+}
+
+const ResourceLayout = ({
+  title,
+  data,
+}: {
+  title: string;
+  data: ResourceData[];
+}) => {
+  const { colorMode } = useColorMode();
   return (
-    <Box>
+    <Box p={'2'} bg={'rgba(25,0,0,0.1)'} borderRadius={'4'}>
       <Center>
-        <Tag>Learning</Tag>
+        <Tag>{title}</Tag>
       </Center>
-      <VStack>
-        <Link>
-          <LinkIcon /> SoyHenry
-        </Link>
-        <Link>
-          <LinkIcon /> OpenBootcamp
-        </Link>
-        <Link>
-          <LinkIcon /> Midudev Bootcamp
-        </Link>
-        <Link>
-          <LinkIcon /> Coderhouse
-        </Link>
-      </VStack>
+      <Flex m={'2'} flexDir={'column'}>
+        {data.map((item, index) => (
+          <Box key={index}>
+            <Link href={item.link} target={'_blank'}>
+              <Text
+                m={'1'}
+                borderRadius={'4'}
+                bg={colorMode === 'light' ? '#DBDBDB' : '#2A2A2A'}
+                noOfLines={2}
+              >
+                <LinkIcon /> {item.name}
+              </Text>
+            </Link>
+          </Box>
+        ))}
+      </Flex>
     </Box>
   );
 };
