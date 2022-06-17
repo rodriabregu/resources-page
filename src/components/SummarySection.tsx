@@ -1,13 +1,10 @@
 import { Center, Grid, GridItem, Text, useColorMode } from '@chakra-ui/react'
 
+import { scrollToSection } from './ToUpScroll'
+
 const SummarySection = ({ titles }: { titles: string[] }) => {
   const { colorMode } = useColorMode()
   const settingColor = colorMode === 'light' ? 'rgba(25,0,0,0.1)' : '#27272a'
-
-  const scrollToSection = (title: string) =>
-    (document.getElementById(title) as HTMLDivElement).scrollIntoView({
-      behavior: 'smooth'
-    })
 
   return (
     <>
