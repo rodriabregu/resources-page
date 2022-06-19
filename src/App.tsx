@@ -20,6 +20,7 @@ import {
 
 import AlertIntro from 'components/AlertIntro'
 import ButtonDarkMode from 'components/ButtonDarkMode'
+import Footer from 'components/Footer'
 import ResourceLayout from 'components/Layout/ResourceLayout'
 import WrapperLayout from 'components/Layout/WrapperLayout'
 import SummarySection from 'components/SummarySection'
@@ -94,6 +95,7 @@ function App() {
           Up {<ArrowUpIcon />}
         </Button>
       </Center>
+      <Footer />
     </Box>
   )
 }
