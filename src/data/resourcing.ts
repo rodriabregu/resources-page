@@ -8,6 +8,10 @@ export const dataBootcamp = [
   {
     name: 'Plataforma 5 💰',
     link: 'https://www.plataforma5.la/'
+  },
+  {
+    name: 'Bootcamp Full-Stack (midudev) 🆓 - 🎥',
+    link: 'https://midu.dev/bootcamp-full-stack-gratis-2021/'
   }
 ]
 
@@ -49,24 +53,12 @@ export const dataFrontend = [
     link: 'https://htmlcheatsheet.com/css/'
   },
   {
-    name: 'Paletas de colores',
-    link: 'https://coolors.co/'
-  },
-  {
-    name: 'Escuela frontend',
-    link: 'https://www.escuelafrontend.com/'
-  },
-  {
     name: 'React.js cheatsheet',
     link: 'https://devhints.io/react'
   },
   {
-    name: 'Paleta de colores (paletas random)',
-    link: 'https://picture-palette.web.app/'
-  },
-  {
-    name: 'Paleta de color personalizable',
-    link: 'https://colorable.jxnblk.com/b3aab0/49524c'
+    name: 'Escuela frontend',
+    link: 'https://www.escuelafrontend.com/'
   },
   {
     name: 'Fancy-Border-Radius (figuras locas con b.r.)',
@@ -133,6 +125,10 @@ export const dataJavascript = [
 
 export const dataLearning = [
   {
+    name: 'FreeCodeCamp 🆓',
+    link: 'https://www.freecodecamp.org/'
+  },
+  {
     name: 'Platzi 💰',
     link: 'https://platzi.com/home'
   },
@@ -147,10 +143,6 @@ export const dataLearning = [
   {
     name: 'Digitalhouse 💰',
     link: 'https://www.digitalhouse.com/'
-  },
-  {
-    name: 'FreeCodeCamp 🆓',
-    link: 'https://www.freecodecamp.org/'
   },
   {
     name: '#Javascript30 🆓 - 🎥',
@@ -192,11 +184,11 @@ export const dataHosting = [
     link: 'https://www.heroku.com/'
   },
   {
-    name: 'AWS Amazon 🆓',
+    name: 'AWS Amazon 💰 / 🆓',
     link: 'https://aws.amazon.com/'
   },
   {
-    name: 'Firebase 🆓',
+    name: 'Firebase 💰 / 🆓',
     link: 'https://firebase.google.com/'
   },
   {
@@ -340,12 +332,16 @@ export const dataColorPallets = [
     link: 'https://colorable.jxnblk.com/'
   },
   {
-    name: 'Picture-Palette',
+    name: 'Picture-Palette (paletas random)',
     link: 'https://picture-palette.web.app/'
   },
   {
     name: 'Material-io',
     link: 'https://material.io/resources/color/#!/?view.left=0&view.right=0'
+  },
+  {
+    name: 'Paleta de color personalizable',
+    link: 'https://colorable.jxnblk.com/b3aab0/49524c'
   }
 ]
 
@@ -373,10 +369,6 @@ export const dataWebIllustrations = [
   {
     name: 'Artify Illustrations + Figma',
     link: 'https://www.artify.co/illustrations-figma'
-  },
-  {
-    name: 'Picture-Palette',
-    link: 'https://picture-palette.web.app/'
   },
   {
     name: 'Material-io',
