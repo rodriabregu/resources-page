@@ -412,7 +412,19 @@ export const dataOptimization = [
 
 export const dataSolidjs = [
   {
-    name: 'Hope-UI',
+    name: 'Solid.js (oficial)',
+    link: 'https://www.solidjs.com/'
+  },
+  {
+    name: 'Hope-UI (similar Chakra-UI)',
     link: 'https://hope-ui.com/'
+  },
+  {
+    name: 'Solid code ejemplos',
+    link: 'https://codesandbox.io/examples/package/solid-js'
+  },
+  {
+    name: 'Solid Learn Playlist (en) 🎥',
+    link: 'https://www.youtube.com/playlist?list=PLtLhzwNMDs1fMi43erQSzXD49Y4p0TniU'
   }
 ]

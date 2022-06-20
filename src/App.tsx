@@ -14,6 +14,7 @@ import {
   dataOptimization,
   dataPrototyping,
   dataRoadmap,
+  dataSolidjs,
   dataWebFonts,
   dataWebIllustrations
 } from 'data/resourcing'
@@ -40,7 +41,8 @@ const titles: string[] = [
   'Prototipo UI/UX',
   'Ilustración web',
   'Imagenes/Fotos',
-  'Optimización tools'
+  'Optimización tools',
+  'Solid.js'
 ]
 
 function App() {
@@ -87,7 +89,7 @@ function App() {
 
         <WrapperLayout>
           <ResourceLayout title={'Optimización tools'} data={dataOptimization} />
-          {/* <ResourceLayout title={'Fuentes web'} data={dataWebFonts} /> */}
+          <ResourceLayout title={'Solid.js'} data={dataSolidjs} />
         </WrapperLayout>
       </Flex>
       <Center>
