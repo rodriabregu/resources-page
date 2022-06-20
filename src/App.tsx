@@ -14,12 +14,14 @@ import {
   dataOptimization,
   dataPrototyping,
   dataRoadmap,
+  dataSolidjs,
   dataWebFonts,
   dataWebIllustrations
 } from 'data/resourcing'
 
 import AlertIntro from 'components/AlertIntro'
 import ButtonDarkMode from 'components/ButtonDarkMode'
+import Footer from 'components/Footer'
 import ResourceLayout from 'components/Layout/ResourceLayout'
 import WrapperLayout from 'components/Layout/WrapperLayout'
 import SummarySection from 'components/SummarySection'
@@ -39,7 +41,8 @@ const titles: string[] = [
   'Prototipo UI/UX',
   'Ilustración web',
   'Imagenes/Fotos',
-  'Optimización tools'
+  'Optimización tools',
+  'Solid.js'
 ]
 
 function App() {
@@ -86,7 +89,7 @@ function App() {
 
         <WrapperLayout>
           <ResourceLayout title={'Optimización tools'} data={dataOptimization} />
-          {/* <ResourceLayout title={'Fuentes web'} data={dataWebFonts} /> */}
+          <ResourceLayout title={'Solid.js'} data={dataSolidjs} />
         </WrapperLayout>
       </Flex>
       <Center>
@@ -94,6 +97,7 @@ function App() {
           Up {<ArrowUpIcon />}
         </Button>
       </Center>
+      <Footer />
     </Box>
   )
 }
