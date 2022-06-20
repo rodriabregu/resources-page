@@ -13,7 +13,7 @@ const SummarySection = ({ titles }: { titles: string[] }) => {
       </Center>
       <Center>
         <Grid
-          templateColumns="repeat(4, 1fr)"
+          templateColumns={{ base: 'repeat(3, 1fr)', md: 'repeat(4, 1fr)', lg: 'repeat(5, 1fr)' }}
           justifyItems={'center'}
           borderRadius={'4'}
           bg={settingColor}
