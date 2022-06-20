@@ -409,3 +409,10 @@ export const dataOptimization = [
     link: 'https://www.webpagetest.org/'
   }
 ]
+
+export const dataSolidjs = [
+  {
+    name: 'Hope-UI',
+    link: 'https://hope-ui.com/'
+  }
+]
