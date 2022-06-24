@@ -46,9 +46,7 @@ const titles: string[] = [
 ]
 
 function App() {
-  if (window.location.pathname !== '/') {
-    window.location.href = '/'
-  }
+  if (window.location.pathname !== '/') location.replace('/')
   return (
     <Box id="app">
       <ButtonDarkMode />
