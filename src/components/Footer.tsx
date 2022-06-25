@@ -1,5 +1,15 @@
 import { ReactNode } from 'react'
-import { Box, chakra, Container, Stack, useColorModeValue, VisuallyHidden } from '@chakra-ui/react'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
+import {
+  Box,
+  chakra,
+  Container,
+  Link,
+  Stack,
+  Text,
+  useColorModeValue,
+  VisuallyHidden
+} from '@chakra-ui/react'
 
 import { SvgGithub, SvgLinkedin } from './Svg/Icons'
 
@@ -47,6 +57,13 @@ export default function Footer() {
         spacing={4}
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
+        <Text>
+          Para colaborar con el proyecto (PR){' '}
+          <Link isExternal href="https://github.com/rodriabregu/resource-page">
+            aquí <ExternalLinkIcon />
+          </Link>
+          .
+        </Text>
         <Stack direction={'row'} spacing={6}>
           <SocialButton label={'Github'} href={'https://github.com/rodriabregu'}>
             <SvgGithub />
