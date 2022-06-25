@@ -44,6 +44,14 @@ export const dataGithub = [
   {
     name: 'Colección repositorios por Stars github',
     link: 'https://github.com/maguowei/awesome-stars#javascript'
+  },
+  {
+    name: 'Awesome Javascript',
+    link: 'https://github.com/sorrycc/awesome-javascript'
+  },
+  {
+    name: 'Readmes profile templates',
+    link: 'https://github.com/durgeshsamariya/awesome-github-profile-readme-templates'
   }
 ]
 
@@ -238,6 +246,14 @@ export const dataCodeChallenges = [
     link: 'https://www.codewars.com/'
   },
   {
+    name: 'Codewars Kata Training JS',
+    link: 'https://www.codewars.com/kata/571ec274b1c8d4a61c0000c8'
+  },
+  {
+    name: 'Codewars Kata Greatest warrior',
+    link: 'https://www.codewars.com/kata/5941c545f5c394fef900000c'
+  },
+  {
     name: 'Codingame',
     link: 'https://www.codingame.com/start'
   },
@@ -426,5 +442,32 @@ export const dataSolidjs = [
   {
     name: 'Solid Learn Playlist (en) 🎥',
     link: 'https://www.youtube.com/playlist?list=PLtLhzwNMDs1fMi43erQSzXD49Y4p0TniU'
+  }
+]
+
+export const dataYoutube = [
+  {
+    name: 'Simple Frontend Pagination | React',
+    link: 'https://www.youtube.com/watch?v=IYCa1F-OWmk'
+  },
+  {
+    name: 'Search Bar React Component in React',
+    link: 'https://www.youtube.com/watch?v=ptvty55bLkk'
+  },
+  {
+    name: 'Barra Buscadora con React Hooks',
+    link: 'https://www.youtube.com/watch?v=HPMSBCfdKKU'
+  },
+  {
+    name: 'Top 30 CSS & Javascript Effects',
+    link: 'https://www.youtube.com/watch?v=62FVLLDYJfs&list=WL&index=8'
+  },
+  {
+    name: 'React consumir API usando POST con axios',
+    link: 'https://www.youtube.com/watch?v=UXAQUGbDJZw'
+  },
+  {
+    name: 'Curso Angular',
+    link: 'https://www.youtube.com/watch?v=fXpMiweCC_o&list=PLU8oAlHdN5BnNAe8zXnuBNzKID39DUwcO'
   }
 ]
