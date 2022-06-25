@@ -16,7 +16,8 @@ import {
   dataRoadmap,
   dataSolidjs,
   dataWebFonts,
-  dataWebIllustrations
+  dataWebIllustrations,
+  dataYoutube
 } from 'data/resourcing'
 
 import AlertIntro from 'components/AlertIntro'
@@ -42,7 +43,8 @@ const titles: string[] = [
   'Ilustración web',
   'Imagenes/Fotos',
   'Optimización tools',
-  'Solid.js'
+  'Solid.js',
+  'Youtube'
 ]
 
 function App() {
@@ -91,6 +93,10 @@ function App() {
         <WrapperLayout>
           <ResourceLayout title={'Optimización tools'} data={dataOptimization} />
           <ResourceLayout title={'Solid.js'} data={dataSolidjs} />
+        </WrapperLayout>
+
+        <WrapperLayout>
+          <ResourceLayout title={'Youtube'} data={dataYoutube} />
         </WrapperLayout>
       </Flex>
       <Center>
