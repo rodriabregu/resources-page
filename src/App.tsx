@@ -1,8 +1,11 @@
 import { ArrowUpIcon } from '@chakra-ui/icons'
 import { Box, Button, Center, Flex } from '@chakra-ui/react'
 import {
+  dataAPI,
   dataBackend,
+  dataBlogs,
   dataBootcamp,
+  dataCheatSheet,
   dataCodeChallenges,
   dataColorPallets,
   dataFrontend,
@@ -11,10 +14,12 @@ import {
   dataImagesPhotos,
   dataJavascript,
   dataLearning,
+  dataMiscellaneous,
   dataOptimization,
   dataPrototyping,
   dataRoadmap,
   dataSolidjs,
+  dataStackSolutions,
   dataWebFonts,
   dataWebIllustrations,
   dataYoutube
@@ -28,24 +33,62 @@ import WrapperLayout from 'components/Layout/WrapperLayout'
 import SummarySection from 'components/SummarySection'
 import { scrollToSection } from 'components/ToUpScroll'
 
-const titles: string[] = [
-  'Learning',
-  'Bootcamps',
-  'Backend',
-  'Frontend',
-  'Javascript',
-  'Github (repositorios)',
-  'Paleta de colores',
-  'Roadmap',
-  'Code Challenges',
-  'Hosting',
-  'Prototipo UI/UX',
-  'Ilustración web',
-  'Imagenes/Fotos',
-  'Optimización tools',
-  'Solid.js',
-  'Youtube'
+interface ResourceData {
+  name: string
+  link: string
+}
+
+const data = [
+  [
+    ['Learning', dataLearning],
+    ['Bootcamps', dataBootcamp]
+  ],
+  [
+    ['Backend', dataBackend],
+    ['Frontend', dataFrontend]
+  ],
+  [
+    ['Javascript', dataJavascript],
+    ['Github (repositorios)', dataGithub]
+  ],
+  [
+    ['Paleta de colores', dataColorPallets],
+    ['Roadmap', dataRoadmap]
+  ],
+  [
+    ['Code Challenges', dataCodeChallenges],
+    ['Hosting', dataHosting]
+  ],
+  [
+    ['Prototipo UI/UX', dataPrototyping],
+    ['Fuentes Web', dataWebFonts]
+  ],
+  [
+    ['Imagenes/Fotos', dataImagesPhotos],
+    ['Ilustración web', dataWebIllustrations]
+  ],
+  [
+    ['Solid.js', dataSolidjs],
+    ['Youtube', dataYoutube]
+  ],
+  [
+    ['Misceláneos', dataMiscellaneous],
+    ['Cheat Sheets', dataCheatSheet]
+  ],
+  [
+    ['APIs', dataAPI],
+    ['Optimización tools', dataOptimization]
+  ],
+  [
+    ['Blogs', dataBlogs],
+    ['Stackoverflow / Respuestas', dataStackSolutions]
+  ]
 ]
+
+const dataTitles = data
+  .flat(2)
+  .map(item => typeof item === 'string' && item)
+  .filter(item => item) as string[]
 
 function App() {
   if (window.location.pathname !== '/') location.replace('/')
@@ -53,51 +96,16 @@ function App() {
     <Box id="app">
       <ButtonDarkMode />
       <AlertIntro />
-      <SummarySection titles={titles} />
+      <SummarySection titles={dataTitles} />
       <Flex m={'4'} align={{ md: 'center' }} direction={'column'}>
-        <WrapperLayout>
-          <ResourceLayout title={'Learning'} data={dataLearning} />
-          <ResourceLayout title={'Bootcamps'} data={dataBootcamp} />
-        </WrapperLayout>
-
-        <WrapperLayout>
-          <ResourceLayout title={'Backend'} data={dataBackend} />
-          <ResourceLayout title={'Frontend'} data={dataFrontend} />
-        </WrapperLayout>
-
-        <WrapperLayout>
-          <ResourceLayout title={'Javascript'} data={dataJavascript} />
-          <ResourceLayout title={'Github (repositorios)'} data={dataGithub} />
-        </WrapperLayout>
-
-        <WrapperLayout>
-          <ResourceLayout title={'Code challenges'} data={dataCodeChallenges} />
-          <ResourceLayout title={'Hosting'} data={dataHosting} />
-        </WrapperLayout>
-
-        <WrapperLayout>
-          <ResourceLayout title={'Paleta de colores'} data={dataColorPallets} />
-          <ResourceLayout title={'Roadmap'} data={dataRoadmap} />
-        </WrapperLayout>
-
-        <WrapperLayout>
-          <ResourceLayout title={'Prototipo UI/UX'} data={dataPrototyping} />
-          <ResourceLayout title={'Imagenes/Fotos'} data={dataImagesPhotos} />
-        </WrapperLayout>
-
-        <WrapperLayout>
-          <ResourceLayout title={'Ilustración web'} data={dataWebIllustrations} />
-          <ResourceLayout title={'Fuentes web'} data={dataWebFonts} />
-        </WrapperLayout>
-
-        <WrapperLayout>
-          <ResourceLayout title={'Optimización tools'} data={dataOptimization} />
-          <ResourceLayout title={'Solid.js'} data={dataSolidjs} />
-        </WrapperLayout>
-
-        <WrapperLayout>
-          <ResourceLayout title={'Youtube'} data={dataYoutube} />
-        </WrapperLayout>
+        {data.map((elem, index) => (
+          <WrapperLayout key={index}>
+            <ResourceLayout title={elem[0][0] as string} data={elem[0][1] as ResourceData[]} />
+            {elem[1] && (
+              <ResourceLayout title={elem[1][0] as string} data={elem[1][1] as ResourceData[]} />
+            )}
+          </WrapperLayout>
+        ))}
       </Flex>
       <Center>
         <Button m={'2'} onClick={() => scrollToSection('app')}>
