@@ -3,7 +3,7 @@ export const dataBootcamp = [
   { name: 'Full stack open 2022 🆓', link: 'https://fullstackopen.com/es/' },
   {
     name: 'Open Bootcamp 💰 / 🆓',
-    link: 'https://open-bootcamp.com/cursos/react'
+    link: 'https://open-bootcamp.com/'
   },
   {
     name: 'Plataforma 5 💰',
@@ -52,6 +52,18 @@ export const dataGithub = [
   {
     name: 'Readmes profile templates',
     link: 'https://github.com/durgeshsamariya/awesome-github-profile-readme-templates'
+  },
+  {
+    name: 'SVG Spinners',
+    link: 'https://github.com/n3r4zzurr0/svg-spinners'
+  },
+  {
+    name: 'Cookbook básico de Webpack (en)',
+    link: 'https://github.com/petehunt/webpack-howto'
+  },
+  {
+    name: 'Javascript Stack Tutorial (en)',
+    link: 'https://github.com/verekia/js-stack-from-scratch'
   }
 ]
 
@@ -75,14 +87,42 @@ export const dataFrontend = [
   {
     name: 'Shapes (estilos con ondas)',
     link: 'https://www.shapedivider.app/'
+  },
+  {
+    name: 'Formspree',
+    link: 'https://formspree.io/'
+  },
+  {
+    name: 'useHooks (customs hooks de React)',
+    link: 'https://usehooks.com/'
+  },
+  {
+    name: 'Snippets de código ',
+    link: 'https://www.joshwcomeau.com/snippets/'
+  },
+  {
+    name: 'SkeletonReact (placeholders con React Content Loader)',
+    link: 'https://skeletonreact.com/'
+  },
+  {
+    name: 'SVG a React Components',
+    link: 'https://react-svgr.com/playground/'
+  },
+  {
+    name: 'SVG/Icons gratis',
+    link: 'https://www.svgrepo.com/'
+  },
+  {
+    name: 'Standards de código HTML y CSS (en)',
+    link: 'https://codeguide.co/'
+  },
+  {
+    name: 'Generador de data mockup',
+    link: 'https://www.mockaroo.com/'
   }
 ]
 
 export const dataBackend = [
-  {
-    name: 'Any Api (apis gratuitas)',
-    link: 'https://any-api.com/'
-  },
   {
     name: 'HTTP Cats (códigos http con michis) 📖',
     link: 'https://http.cat/'
@@ -94,6 +134,14 @@ export const dataBackend = [
   {
     name: 'PostgreSQL documentación 📖',
     link: 'https://www.postgresqltutorial.com/postgresql-getting-started/'
+  },
+  {
+    name: 'Learn ExpressJS (en)',
+    link: 'https://www.tutorialspoint.com/expressjs/index.htm'
+  },
+  {
+    name: 'ElephantSQL documentación (en)',
+    link: 'https://www.elephantsql.com/docs/index.html'
   }
 ]
 
@@ -105,6 +153,10 @@ export const dataRoadmap = [
   {
     name: 'Roadmaps de TODO',
     link: 'https://roadmap.sh/'
+  },
+  {
+    name: 'Roadmap Javascript (en)',
+    link: 'https://flaviocopes.com/javascript/'
   }
 ]
 
@@ -128,6 +180,18 @@ export const dataJavascript = [
   {
     name: '33 Conceptos que todo desarrollador de JavaScript debería saber 📖',
     link: 'https://github.com/adonismendozaperez/33-js-conceptos'
+  },
+  {
+    name: 'Patrones de diseño en Typescript 📖',
+    link: 'https://refactoring.guru/es/design-patterns/typescript'
+  },
+  {
+    name: 'El estado de Javascript (en-es)',
+    link: 'https://stateofjs.com/en-us/'
+  },
+  {
+    name: 'Javascript Constructors and Prototypes',
+    link: 'https://tobyho.com/2010/11/22/javascript-constructors-and/'
   }
 ]
 
@@ -286,10 +350,6 @@ export const dataCodeChallenges = [
     link: 'https://www.codechef.com/'
   },
   {
-    name: 'Surge',
-    link: 'https://surge.sh/'
-  },
-  {
     name: 'Codebyte',
     link: 'https://coderbyte.com/'
   },
@@ -300,6 +360,14 @@ export const dataCodeChallenges = [
   {
     name: 'Topcoder',
     link: 'https://www.topcoder.com/'
+  },
+  {
+    name: '100 días de css',
+    link: 'https://100dayscss.com/'
+  },
+  {
+    name: 'Ace Frontend',
+    link: 'https://www.acefrontend.com/'
   }
 ]
 
@@ -354,10 +422,6 @@ export const dataColorPallets = [
   {
     name: 'Material-io',
     link: 'https://material.io/resources/color/#!/?view.left=0&view.right=0'
-  },
-  {
-    name: 'Paleta de color personalizable',
-    link: 'https://colorable.jxnblk.com/b3aab0/49524c'
   }
 ]
 
@@ -389,6 +453,10 @@ export const dataWebIllustrations = [
   {
     name: 'Material-io',
     link: 'https://material.io/resources/color/#!/?view.left=0&view.right=0'
+  },
+  {
+    name: 'Generador Favicon (text, img, emoji)',
+    link: 'https://favicon.io/'
   }
 ]
 
@@ -442,6 +510,14 @@ export const dataSolidjs = [
   {
     name: 'Solid Learn Playlist (en) 🎥',
     link: 'https://www.youtube.com/playlist?list=PLtLhzwNMDs1fMi43erQSzXD49Y4p0TniU'
+  },
+  {
+    name: 'How to Deploy SolidJS',
+    link: 'https://dev.to/brittneypostma/how-to-deploy-solidjs-4hoi'
+  },
+  {
+    name: 'Awesome SolidJS',
+    link: 'https://github.com/one-aalam/awesome-solid-js'
   }
 ]
 
@@ -463,11 +539,210 @@ export const dataYoutube = [
     link: 'https://www.youtube.com/watch?v=62FVLLDYJfs&list=WL&index=8'
   },
   {
-    name: 'React consumir API usando POST con axios',
+    name: 'Consumir API con POST y axios en React',
     link: 'https://www.youtube.com/watch?v=UXAQUGbDJZw'
   },
   {
     name: 'Curso Angular',
     link: 'https://www.youtube.com/watch?v=fXpMiweCC_o&list=PLU8oAlHdN5BnNAe8zXnuBNzKID39DUwcO'
+  },
+  {
+    name: 'React Movie App Tutorial',
+    link: 'https://www.youtube.com/watch?v=jc9_Bqzy2YQ'
+  },
+  {
+    name: 'Add Google Recaptcha V2 to HTML Form',
+    link: 'https://www.youtube.com/watch?v=VSWM5TqE3uc'
+  }
+]
+
+export const dataMiscellaneous = [
+  {
+    name: 'Scrum Poker',
+    link: 'https://scrumpoker.online/'
+  },
+  {
+    name: 'Planning Poker',
+    link: 'https://planningpokeronline.com/'
+  },
+  {
+    name: 'Imágenes de tu código',
+    link: 'https://carbon.now.sh/'
+  },
+  {
+    name: 'Bundlephobia (size dependencys)',
+    link: 'https://bundlephobia.com/'
+  },
+  {
+    name: 'Packagephobia (size dependencys)',
+    link: 'https://packagephobia.com/'
+  },
+  {
+    name: 'Trending Packages',
+    link: 'https://www.npmtrends.com/'
+  },
+  {
+    name: 'Cult of the Party Parrot',
+    link: 'https://cultofthepartyparrot.com/'
+  },
+  {
+    name: 'Los apuntes de Majo',
+    link: 'https://losapuntesdemajo.vercel.app/'
+  },
+  {
+    name: 'Instalaciones básicas en Mac',
+    link: 'https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/'
+  },
+  {
+    name: 'Badges github',
+    link: 'https://shields.io/'
+  },
+  {
+    name: 'Gitmoji',
+    link: 'https://gitmoji.dev/'
+  },
+  {
+    name: 'Chat Bubbles',
+    link: 'https://chat-bubbles.craftz.dog/'
+  },
+  {
+    name: 'HTML5 Drag and Dropn',
+    link: 'https://web.dev/drag-and-drop/'
+  },
+  {
+    name: 'Other Resource Lists 👀',
+    link: 'https://github.com/foo-dogsquared/freebies-hunt-api/blob/master/src/list.md'
+  },
+  {
+    name: 'Lista de emojis compatibles con commits',
+    link: 'https://gist.github.com/rxaviers/7360908'
+  },
+  {
+    name: 'Tool para transformar información (SVG, Markdown, etc)',
+    link: 'https://transform.tools/'
+  },
+  {
+    name: 'Explorador de Git',
+    link: 'https://gitexplorer.com/'
+  },
+  {
+    name: 'Can i use? (compatibilidad en navegadores)',
+    link: 'https://caniuse.com/'
+  }
+]
+
+export const dataCheatSheet = [
+  {
+    name: 'emoji-cheat-sheet',
+    link: 'https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md'
+  },
+  {
+    name: 'Jest Testing Cheat Sheet',
+    link: 'https://files.jrebel.com/pdf/zt_junit_cheat_sheet.pdf'
+  },
+  {
+    name: 'Planning Poker',
+    link: 'https://planningpokeronline.com/'
+  },
+  {
+    name: 'Imágenes de tu código',
+    link: 'https://carbon.now.sh/'
+  }
+]
+
+export const dataAPI = [
+  {
+    name: 'Anime API con GraphQL',
+    link: 'https://my-anime-api.herokuapp.com/'
+  },
+  {
+    name: 'APIs Hub',
+    link: 'https://rapidapi.com/hub'
+  },
+  {
+    name: 'Any Api (apis gratuitas)',
+    link: 'https://any-api.com/'
+  },
+  {
+    name: 'Fake API para testing y prototipado',
+    link: 'http://jsonplaceholder.typicode.com/'
+  }
+]
+
+export const dataBlogs = [
+  {
+    name: 'Clean up Xcode cache files on your Mac (en)',
+    link: 'https://lovemewithoutall.github.io/it/xcode-clean-up/'
+  },
+  {
+    name: 'Crear contenedor con Docker-Mysql',
+    link: 'https://platzi.com/tutoriales/1432-docker/3268-como-crear-un-contenedor-con-docker-mysql-y-persistir-la-informacion/'
+  },
+  {
+    name: 'Connect to MySQL running in Docker (en)',
+    link: 'https://towardsdatascience.com/connect-to-mysql-running-in-docker-container-from-a-local-machine-6d996c574e55'
+  },
+  {
+    name: 'Compare the Top 3 Style Guides and Set Them Up With ESLint (en)',
+    link: 'https://betterprogramming.pub/comparing-the-top-three-style-guides-and-setting-them-up-with-eslint-98ea0d2fc5b7'
+  },
+  {
+    name: 'VS Code: You dont need that extension (en)',
+    link: 'https://www.roboleary.net/vscode/2020/08/05/dont-need-extensions.html'
+  },
+  {
+    name: 'Configurar EsLint y Prettier junto con VScode',
+    link: 'https://dev.to/mrluisfer/configurar-eslint-prettier-junto-con-vscode-3h00'
+  },
+  {
+    name: 'Setup ESLINT and PRETTIER in React app (en)',
+    link: 'https://dev.to/knowankit/setup-eslint-and-prettier-in-react-app-357b'
+  },
+  {
+    name: 'CSS Tricks (en)',
+    link: 'https://css-tricks.com/'
+  },
+  {
+    name: 'Get URL and URL Parts in JavaScript (en)',
+    link: 'https://css-tricks.com/snippets/javascript/get-url-and-url-parts-in-javascript/'
+  },
+  {
+    name: 'The optimistic UI with React (en)',
+    link: 'https://uxdesign.cc/the-optimistic-ui-with-react-f1420e317d54'
+  },
+  {
+    name: 'CSS Tricks (en)',
+    link: 'https://css-tricks.com/'
+  }
+]
+
+export const dataStackSolutions = [
+  {
+    name: 'How to properly reference local resources in HTML?',
+    link: 'https://stackoverflow.com/questions/14489016/how-to-properly-reference-local-resources-in-html'
+  },
+  {
+    name: 'Absolute path not working in Vite project React TS',
+    link: 'https://stackoverflow.com/questions/68241263/absolute-path-not-working-in-vite-project-react-ts'
+  },
+  {
+    name: 'Error: ENFILE: file table overflow, scandir while run reaction on Mac',
+    link: 'https://stackoverflow.com/questions/45004352/error-enfile-file-table-overflow-scandir-while-run-reaction-on-mac'
+  },
+  {
+    name: 'Compare the Top 3 Style Guides and Set Them Up With ESLint',
+    link: 'https://betterprogramming.pub/comparing-the-top-three-style-guides-and-setting-them-up-with-eslint-98ea0d2fc5b7'
+  },
+  {
+    name: 'VS Code: You dont need that extension',
+    link: 'https://www.roboleary.net/vscode/2020/08/05/dont-need-extensions.html'
+  },
+  {
+    name: 'Configurar EsLint y Prettier junto con VScode',
+    link: 'https://dev.to/mrluisfer/configurar-eslint-prettier-junto-con-vscode-3h00'
+  },
+  {
+    name: 'Setup ESLINT and PRETTIER in React app',
+    link: 'https://dev.to/knowankit/setup-eslint-and-prettier-in-react-app-357b'
   }
 ]
