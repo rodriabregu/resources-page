@@ -69,11 +69,11 @@ const data = [
   ],
   [
     ['Solid.js', dataSolidjs],
-    ['Youtube', dataYoutube]
+    ['Cheat Sheets', dataCheatSheet]
   ],
   [
     ['Misceláneos', dataMiscellaneous],
-    ['Cheat Sheets', dataCheatSheet]
+    ['Youtube', dataYoutube]
   ],
   [
     ['APIs', dataAPI],
