@@ -713,6 +713,10 @@ export const dataBlogs = [
   {
     name: 'CSS Tricks (en)',
     link: 'https://css-tricks.com/'
+  },
+  {
+    name: 'Why React Native Has Opted for New Architecture? (en)',
+    link: 'https://blogs.ashutec.com/why-react-native-has-opted-for-new-architecture-whats-expected-from-this-change-6435aa5b5088'
   }
 ]
 
