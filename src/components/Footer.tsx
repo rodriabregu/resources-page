@@ -52,7 +52,7 @@ export default function Footer() {
       <Container
         as={Stack}
         maxW={'6xl'}
-        py={4}
+        py={2}
         direction={{ base: 'column', md: 'row' }}
         spacing={4}
         justify={{ base: 'center', md: 'space-between' }}
@@ -60,9 +60,8 @@ export default function Footer() {
         <Text>
           Para colaborar con el proyecto (PR){' '}
           <Link isExternal href="https://github.com/rodriabregu/resource-page">
-            aquí <ExternalLinkIcon />
+            click aquí al repositorio <ExternalLinkIcon />
           </Link>
-          .
         </Text>
         <Stack direction={'row'} spacing={6}>
           <SocialButton label={'Github'} href={'https://github.com/rodriabregu'}>
