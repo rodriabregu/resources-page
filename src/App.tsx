@@ -30,6 +30,7 @@ import ButtonDarkMode from 'components/ButtonDarkMode'
 import Footer from 'components/Footer'
 import ResourceLayout from 'components/Layout/ResourceLayout'
 import WrapperLayout from 'components/Layout/WrapperLayout'
+import { Star } from 'components/Star'
 import SummarySection from 'components/SummarySection'
 import { scrollToSection } from 'components/ToUpScroll'
 
@@ -91,18 +92,18 @@ const dataTitles = data
   .filter(item => item) as string[]
 
 function App() {
-  if (window.location.pathname !== '/') location.replace('/')
   return (
     <Box id="app">
       <ButtonDarkMode />
+      <Star />
       <AlertIntro />
       <SummarySection titles={dataTitles} />
       <Flex m={'4'} align={{ md: 'center' }} direction={'column'}>
-        {data.map((elem, index) => (
+        {data.map(([elemA, elemB], index) => (
           <WrapperLayout key={index}>
-            <ResourceLayout title={elem[0][0] as string} data={elem[0][1] as ResourceData[]} />
-            {elem[1] && (
-              <ResourceLayout title={elem[1][0] as string} data={elem[1][1] as ResourceData[]} />
+            <ResourceLayout title={elemA[0] as string} data={elemA[1] as ResourceData[]} />
+            {elemB && (
+              <ResourceLayout title={elemB[0] as string} data={elemB[1] as ResourceData[]} />
             )}
           </WrapperLayout>
         ))}

@@ -628,6 +628,14 @@ export const dataMiscellaneous = [
   {
     name: 'Can i use? (compatibilidad en navegadores)',
     link: 'https://caniuse.com/'
+  },
+  {
+    name: 'Generador de readme para Github profile',
+    link: 'https://readme.so/es'
+  },
+  {
+    name: 'Otro gnerador de readme para Github profile',
+    link: 'https://rahuldkjain.github.io/gh-profile-readme-generator/'
   }
 ]
 

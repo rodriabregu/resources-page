@@ -28,43 +28,39 @@ const ResourceLayout = ({ title, data }: { title: string; data: ResourceData[] }
   )
 
   return (
-    <Box>
-      <Collapse startingHeight={50} in={show}>
-        <Box
-          m={'2'}
-          p={'2'}
-          w={'100'}
-          id={title}
-          bg={settingColor}
-          borderRadius={'4'}
-          ml={{ base: '0', md: '2' }}
-          mr={{ base: '0', md: '2' }}>
-          <Center>
-            <Tag>{title}</Tag>
-            {viewMoreLess}
-          </Center>
-          <Flex m={'2'} flexDir={'column'}>
-            {data.map((item, index) => (
-              <Box key={index}>
-                <Link href={item.link} target={'_blank'}>
-                  <Text
-                    m={'1'}
-                    noOfLines={2}
-                    borderRadius={'4'}
-                    w={{ base: '100%', md: '80' }}
-                    _hover={{
-                      backgroundColor: colorMode === 'light' ? '#DBDBDB' : 'rgba(5,0,0,0.1)'
-                    }}>
-                    <LinkIcon /> {item.name}
-                  </Text>
-                </Link>
-              </Box>
-            ))}
-          </Flex>
-          {data.length >= 10 && viewMoreLess}
-        </Box>
-      </Collapse>
-    </Box>
+    <Collapse startingHeight={50} in={!show}>
+      <Box
+        m={'2'}
+        p={'2'}
+        w={'100'}
+        id={title}
+        bg={settingColor}
+        borderRadius={'4'}
+        ml={{ base: '0', md: '2' }}
+        mr={{ base: '0', md: '2' }}>
+        <Center>
+          <Tag>{title}</Tag>
+          {viewMoreLess}
+        </Center>
+        <Flex m={'2'} flexDir={'column'}>
+          {data.map((item, index) => (
+            <Link key={index} href={item.link} target={'_blank'}>
+              <Text
+                m={'1'}
+                noOfLines={2}
+                borderRadius={'4'}
+                w={{ base: '100%', md: '80' }}
+                _hover={{
+                  backgroundColor: colorMode === 'light' ? '#DBDBDB' : 'rgba(5,0,0,0.1)'
+                }}>
+                <LinkIcon /> {item.name}
+              </Text>
+            </Link>
+          ))}
+        </Flex>
+        {data.length >= 10 && viewMoreLess}
+      </Box>
+    </Collapse>
   )
 }
 
