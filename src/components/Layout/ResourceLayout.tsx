@@ -23,7 +23,7 @@ const ResourceLayout = ({ title, data }: { title: string; data: ResourceData[] }
       cursor={'pointer'}
       fontSize={'x-small'}
       onClick={handleToggle}>
-      Ver {show ? 'menos' : 'más'} {show ? <ChevronUpIcon /> : <ChevronDownIcon />}
+      Ver {!show ? 'menos' : 'más'} {show ? <ChevronUpIcon /> : <ChevronDownIcon />}
     </Text>
   )
 
