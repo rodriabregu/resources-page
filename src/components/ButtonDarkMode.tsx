@@ -1,5 +1,5 @@
 import { MoonIcon, SunIcon } from '@chakra-ui/icons'
-import { IconButton, useColorMode, useColorModeValue } from '@chakra-ui/react'
+import { Center, IconButton, useColorMode, useColorModeValue } from '@chakra-ui/react'
 import { AnimatePresence, motion } from 'framer-motion'
 
 const ButtonDarkMode = () => {
