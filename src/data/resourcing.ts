@@ -630,11 +630,11 @@ export const dataMiscellaneous = [
     link: 'https://caniuse.com/'
   },
   {
-    name: 'Generador de readme para Github profile',
+    name: 'Generador de readmes para github',
     link: 'https://readme.so/es'
   },
   {
-    name: 'Otro gnerador de readme para Github profile',
+    name: 'Generador de readme para Github profile',
     link: 'https://rahuldkjain.github.io/gh-profile-readme-generator/'
   }
 ]

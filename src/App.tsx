@@ -93,28 +93,30 @@ const dataTitles = data
 
 function App() {
   return (
-    <Box id="app">
-      <ButtonDarkMode />
-      <Star />
-      <AlertIntro />
-      <SummarySection titles={dataTitles} />
-      <Flex m={'4'} align={{ md: 'center' }} direction={'column'}>
-        {data.map(([elemA, elemB], index) => (
-          <WrapperLayout key={index}>
-            <ResourceLayout title={elemA[0] as string} data={elemA[1] as ResourceData[]} />
-            {elemB && (
-              <ResourceLayout title={elemB[0] as string} data={elemB[1] as ResourceData[]} />
-            )}
-          </WrapperLayout>
-        ))}
-      </Flex>
-      <Center>
-        <Button m={'2'} onClick={() => scrollToSection('app')}>
-          Up {<ArrowUpIcon />}
-        </Button>
-      </Center>
+    <>
+      <Box maxW={'3xl'} margin={'auto'} id="app">
+        <ButtonDarkMode />
+        <Star />
+        <AlertIntro />
+        <SummarySection titles={dataTitles} />
+        <Flex m={'4'} align={{ md: 'center' }} direction={'column'}>
+          {data.map(([elemA, elemB], index) => (
+            <WrapperLayout key={index}>
+              <ResourceLayout title={elemA[0] as string} data={elemA[1] as ResourceData[]} />
+              {elemB && (
+                <ResourceLayout title={elemB[0] as string} data={elemB[1] as ResourceData[]} />
+              )}
+            </WrapperLayout>
+          ))}
+        </Flex>
+        <Center>
+          <Button m={'2'} onClick={() => scrollToSection('app')}>
+            Up {<ArrowUpIcon />}
+          </Button>
+        </Center>
+      </Box>
       <Footer />
-    </Box>
+    </>
   )
 }
 
