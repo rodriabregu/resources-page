@@ -2,11 +2,7 @@ import { useState } from 'react'
 import { LinkIcon } from '@chakra-ui/icons'
 import { ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons'
 import { Box, Center, Collapse, Flex, Link, Tag, Text, useColorMode } from '@chakra-ui/react'
-
-interface ResourceData {
-  name: string
-  link: string
-}
+import { ResourceData } from 'src/interfaces'
 
 const ResourceLayout = ({ title, data }: { title: string; data: ResourceData[] }) => {
   const { colorMode } = useColorMode()
@@ -30,6 +26,7 @@ const ResourceLayout = ({ title, data }: { title: string; data: ResourceData[] }
   return (
     <Collapse startingHeight={50} in={!show}>
       <Box
+        as={'article'}
         m={'2'}
         p={'2'}
         w={'100'}
