@@ -25,13 +25,14 @@ import {
   dataYoutube
 } from 'data/resourcing'
 
+import { AboutSection } from 'components/AboutSection'
 import AlertIntro from 'components/AlertIntro'
 import ButtonDarkMode from 'components/ButtonDarkMode'
 import Footer from 'components/Footer'
 import ResourceLayout from 'components/Layout/ResourceLayout'
 import WrapperLayout from 'components/Layout/WrapperLayout'
 import { Star } from 'components/Star'
-import SummarySection from 'components/SummarySection'
+import { SummarySection } from 'components/SummarySection'
 import { scrollToSection } from 'components/ToUpScroll'
 
 interface ResourceData {
@@ -82,7 +83,7 @@ const data = [
   ],
   [
     ['Blogs', dataBlogs],
-    ['Stackoverflow / Respuestas', dataStackSolutions]
+    ['Stackoverflow/Q&A', dataStackSolutions]
   ]
 ]
 
@@ -94,7 +95,7 @@ const dataTitles = data
 function App() {
   return (
     <>
-      <Box maxW={'3xl'} margin={'auto'} id="app">
+      <Box maxW={'3xl'} m={'auto'} id="app">
         <ButtonDarkMode />
         <Star />
         <AlertIntro />
@@ -109,8 +110,9 @@ function App() {
             </WrapperLayout>
           ))}
         </Flex>
+        <AboutSection />
         <Center>
-          <Button m={'2'} onClick={() => scrollToSection('app')}>
+          <Button mb={'2'} onClick={() => scrollToSection('app')}>
             Up {<ArrowUpIcon />}
           </Button>
         </Center>
