@@ -2,7 +2,7 @@ import { Center, Grid, GridItem, Text, useColorMode } from '@chakra-ui/react'
 
 import { scrollToSection } from './ToUpScroll'
 
-const SummarySection = ({ titles }: { titles: string[] }) => {
+export const SummarySection = ({ titles }: { titles: string[] }) => {
   const { colorMode } = useColorMode()
   const settingColor = colorMode === 'light' ? 'rgba(25,0,0,0.1)' : '#27272a'
 
@@ -25,8 +25,8 @@ const SummarySection = ({ titles }: { titles: string[] }) => {
           {titles.map((title: string) => (
             <GridItem key={title} w="auto" h="10">
               <Text
-                m={'1'}
-                p={'1'}
+                p={'2'}
+                noOfLines={1}
                 fontSize={'small'}
                 borderRadius={'4'}
                 cursor={'pointer'}
@@ -43,5 +43,3 @@ const SummarySection = ({ titles }: { titles: string[] }) => {
     </>
   )
 }
-
-export default SummarySection
