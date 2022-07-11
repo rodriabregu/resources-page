@@ -1,29 +1,7 @@
 import { ArrowUpIcon } from '@chakra-ui/icons'
 import { Box, Button, Center, Flex } from '@chakra-ui/react'
-import {
-  dataAPI,
-  dataBackend,
-  dataBlogs,
-  dataBootcamp,
-  dataCheatSheet,
-  dataCodeChallenges,
-  dataColorPallets,
-  dataFrontend,
-  dataGithub,
-  dataHosting,
-  dataImagesPhotos,
-  dataJavascript,
-  dataLearning,
-  dataMiscellaneous,
-  dataOptimization,
-  dataPrototyping,
-  dataRoadmap,
-  dataSolidjs,
-  dataStackSolutions,
-  dataWebFonts,
-  dataWebIllustrations,
-  dataYoutube
-} from 'data/resourcing'
+import { data, dataTitles } from 'data/data'
+import { ResourceData } from 'src/interfaces'
 
 import { AboutSection } from 'components/AboutSection'
 import AlertIntro from 'components/AlertIntro'
@@ -34,63 +12,6 @@ import WrapperLayout from 'components/Layout/WrapperLayout'
 import { Star } from 'components/Star'
 import { SummarySection } from 'components/SummarySection'
 import { scrollToSection } from 'components/ToUpScroll'
-
-interface ResourceData {
-  name: string
-  link: string
-}
-
-const data = [
-  [
-    ['Learning', dataLearning],
-    ['Bootcamps', dataBootcamp]
-  ],
-  [
-    ['Backend', dataBackend],
-    ['Frontend', dataFrontend]
-  ],
-  [
-    ['Javascript', dataJavascript],
-    ['Github (repositorios)', dataGithub]
-  ],
-  [
-    ['Paleta de colores', dataColorPallets],
-    ['Roadmap', dataRoadmap]
-  ],
-  [
-    ['Code Challenges', dataCodeChallenges],
-    ['Hosting', dataHosting]
-  ],
-  [
-    ['Prototipo UI/UX', dataPrototyping],
-    ['Fuentes Web', dataWebFonts]
-  ],
-  [
-    ['Imagenes/Fotos', dataImagesPhotos],
-    ['Ilustración web', dataWebIllustrations]
-  ],
-  [
-    ['Solid.js', dataSolidjs],
-    ['Cheat Sheets', dataCheatSheet]
-  ],
-  [
-    ['Misceláneos', dataMiscellaneous],
-    ['Youtube', dataYoutube]
-  ],
-  [
-    ['APIs', dataAPI],
-    ['Optimización tools', dataOptimization]
-  ],
-  [
-    ['Blogs', dataBlogs],
-    ['Stackoverflow/Q&A', dataStackSolutions]
-  ]
-]
-
-const dataTitles = data
-  .flat(2)
-  .map(item => typeof item === 'string' && item)
-  .filter(item => item) as string[]
 
 function App() {
   return (
