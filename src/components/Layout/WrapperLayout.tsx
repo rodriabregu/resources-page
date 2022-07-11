@@ -1,11 +1,8 @@
 import React from 'react'
 import { Flex } from '@chakra-ui/react'
+import { ChildrenInt } from 'src/interfaces'
 
-interface AuxProps {
-  children: React.ReactNode
-}
-
-function WrapperLayout({ children }: AuxProps) {
+function WrapperLayout({ children }: ChildrenInt) {
   return (
     <Flex
       as={'section'}
