@@ -8,6 +8,7 @@ interface AuxProps {
 function WrapperLayout({ children }: AuxProps) {
   return (
     <Flex
+      as={'section'}
       flexDir={{
         base: 'column',
         md: 'row'

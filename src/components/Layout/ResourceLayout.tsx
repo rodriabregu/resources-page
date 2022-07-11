@@ -30,6 +30,7 @@ const ResourceLayout = ({ title, data }: { title: string; data: ResourceData[] }
   return (
     <Collapse startingHeight={50} in={!show}>
       <Box
+        as={'article'}
         m={'2'}
         p={'2'}
         w={'100'}

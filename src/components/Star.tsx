@@ -11,9 +11,15 @@ export function Star() {
   }, [])
 
   return (
-    <Center>
+    <Center as={'header'}>
       <Link m={{ md: -5 }} isExternal href="https://github.com/rodriabregu/resource-page">
-        <Text bg={'bluePrimary'} p={'0.5rem'} m={'4'} borderRadius={'4'} fontSize={'xl'}>
+        <Text
+          as={'span'}
+          bg={'bluePrimary'}
+          p={'0.5rem'}
+          m={'4'}
+          borderRadius={'4'}
+          fontSize={'xl'}>
           Apoya a este repo 🌟 {star}
         </Text>
       </Link>
