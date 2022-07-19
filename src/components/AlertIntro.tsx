@@ -5,8 +5,8 @@ const AlertIntro = () => {
     <Flex as={'header'} m={'auto'} justify={'center'} flexDir={{ base: 'column', md: 'row' }}>
       <Center m={'6'}>
         <Box alignItems={'center'}>
-          <Text as={'h3'}>💰 tiene contenido pago.</Text>
-          <Text as={'h3'}>🆓 tiene contenido gratuito.</Text>
+          <Text as={'h3'}>💰 contenido pago.</Text>
+          <Text as={'h3'}>🆓 contenido gratuito.</Text>
           <Text as={'h3'}>🎥 contenido de video.</Text>
           <Text as={'h3'}>📖 contenido de lectura.</Text>
         </Box>
