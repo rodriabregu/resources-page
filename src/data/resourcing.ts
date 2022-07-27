@@ -119,6 +119,10 @@ export const dataFrontend = [
   {
     name: 'Generador de data mockup',
     link: 'https://www.mockaroo.com/'
+  },
+  {
+    name: 'Defensive CSS (best tips for problems css)',
+    link: 'https://defensivecss.dev/'
   }
 ]
 
@@ -192,6 +196,10 @@ export const dataJavascript = [
   {
     name: 'Javascript Constructors and Prototypes',
     link: 'https://tobyho.com/2010/11/22/javascript-constructors-and/'
+  },
+  {
+    name: 'El Tutorial de JavaScript Moderno',
+    link: 'https://es.javascript.info/'
   }
 ]
 
