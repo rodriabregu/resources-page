@@ -182,6 +182,10 @@ export const dataJavascript = [
     link: 'https://github.com/Asabeneh/30-Days-Of-JavaScript'
   },
   {
+    name: '30 días de React (tareas diarias) 📖',
+    link: 'https://github.com/jdmoreno2/30-days-of-react'
+  },
+  {
     name: '33 Conceptos que todo desarrollador de JavaScript debería saber 📖',
     link: 'https://github.com/adonismendozaperez/33-js-conceptos'
   },
@@ -644,6 +648,10 @@ export const dataMiscellaneous = [
   {
     name: 'Generador de readme para Github profile',
     link: 'https://rahuldkjain.github.io/gh-profile-readme-generator/'
+  },
+  {
+    name: 'Generar licencia para un repositorio',
+    link: 'https://docs.github.com/es/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository'
   }
 ]
 
