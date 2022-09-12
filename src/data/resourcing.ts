@@ -1,13 +1,8 @@
 export const dataBootcamp = [
-  { name: 'SoyHenry 💰 / 🆓', link: 'https://soyhenry.com' },
   { name: 'Full stack open 2022 🆓', link: 'https://fullstackopen.com/es/' },
   {
-    name: 'Open Bootcamp 💰 / 🆓',
+    name: 'OpenBootcamp 🆓 - 🎥',
     link: 'https://open-bootcamp.com/'
-  },
-  {
-    name: 'Plataforma 5 💰',
-    link: 'https://www.plataforma5.la/'
   },
   {
     name: 'Bootcamp Full-Stack (midudev) 🆓 - 🎥',
@@ -69,12 +64,8 @@ export const dataGithub = [
 
 export const dataFrontend = [
   {
-    name: 'CSS Cheatsheet (the best)',
+    name: 'CSS Generator / Cheatsheet (the best)',
     link: 'https://htmlcheatsheet.com/css/'
-  },
-  {
-    name: 'React.js cheatsheet',
-    link: 'https://devhints.io/react'
   },
   {
     name: 'Escuela frontend',
@@ -161,6 +152,10 @@ export const dataRoadmap = [
   {
     name: 'Roadmap Javascript (en)',
     link: 'https://flaviocopes.com/javascript/'
+  },
+  {
+    name: 'JavaScript Knowledge Map (en)',
+    link: 'https://learnjavascript.online/knowledge-map.html'
   }
 ]
 
@@ -213,20 +208,20 @@ export const dataLearning = [
     link: 'https://www.freecodecamp.org/'
   },
   {
+    name: 'El Tutorial de JavaScript Moderno 🆓',
+    link: 'https://aprendejavascript.dev/'
+  },
+  {
+    name: '¡Aprende JavaScript! (in process) 🆓',
+    link: 'https://es.javascript.info/'
+  },
+  {
     name: 'Platzi 💰',
     link: 'https://platzi.com/home'
   },
   {
     name: 'Udemy 💰 / 🆓',
     link: 'https://www.udemy.com/'
-  },
-  {
-    name: 'Coderhouse 💰',
-    link: 'https://www.coderhouse.com/'
-  },
-  {
-    name: 'Digitalhouse 💰',
-    link: 'https://www.digitalhouse.com/'
   },
   {
     name: '#Javascript30 🆓 - 🎥',
@@ -247,6 +242,22 @@ export const dataLearning = [
   {
     name: 'SoloLearn 💰 / 🆓',
     link: 'https://www.sololearn.com/home'
+  },
+  {
+    name: 'Coderhouse 💰',
+    link: 'https://www.coderhouse.com/'
+  },
+  {
+    name: 'Digitalhouse 💰',
+    link: 'https://www.digitalhouse.com/'
+  },
+  {
+    name: 'JavaScript Express (en) 🆓',
+    link: 'https://www.javascript.express/#welcome-'
+  },
+  {
+    name: 'TypeScript Express (en) 🆓',
+    link: 'https://www.typescript.express/'
   }
 ]
 
@@ -264,15 +275,11 @@ export const dataHosting = [
     link: 'https://www.netlify.com/'
   },
   {
-    name: 'Heroku 🆓',
-    link: 'https://www.heroku.com/'
-  },
-  {
-    name: 'AWS Amazon 💰 / 🆓',
+    name: 'AWS Amazon 🆓',
     link: 'https://aws.amazon.com/'
   },
   {
-    name: 'Firebase 💰 / 🆓',
+    name: 'Firebase 🆓',
     link: 'https://firebase.google.com/'
   },
   {
@@ -290,6 +297,34 @@ export const dataHosting = [
   {
     name: 'Surge 🆓',
     link: 'https://surge.sh/'
+  },
+  {
+    name: 'Fly.io 🆓',
+    link: 'https://fly.io/'
+  },
+  {
+    name: 'CloudFlare 🆓',
+    link: 'https://www.cloudflare.com/'
+  },
+  {
+    name: 'PlanetScale DB 🆓',
+    link: 'https://planetscale.com/'
+  },
+  {
+    name: 'Supabase DB 🆓',
+    link: 'https://supabase.com/'
+  },
+  {
+    name: 'CockroachlaDB DB 🆓',
+    link: 'https://www.cockroachlabs.com/'
+  },
+  {
+    name: 'Mongodb DB 🆓',
+    link: 'https://www.mongodb.com/'
+  },
+  {
+    name: 'Heroku ("deprecated")',
+    link: 'https://www.heroku.com/'
   }
 ]
 
@@ -671,6 +706,14 @@ export const dataCheatSheet = [
   {
     name: 'Imágenes de tu código',
     link: 'https://carbon.now.sh/'
+  },
+  {
+    name: 'Regex Cheat Sheet',
+    link: 'https://dev.to/emmabostian/regex-cheat-sheet-2j2a'
+  },
+  {
+    name: 'React.js cheatsheet',
+    link: 'https://devhints.io/react'
   }
 ]
 
@@ -735,10 +778,6 @@ export const dataBlogs = [
     link: 'https://uxdesign.cc/the-optimistic-ui-with-react-f1420e317d54'
   },
   {
-    name: 'CSS Tricks (en)',
-    link: 'https://css-tricks.com/'
-  },
-  {
     name: 'Why React Native Has Opted for New Architecture? (en)',
     link: 'https://blogs.ashutec.com/why-react-native-has-opted-for-new-architecture-whats-expected-from-this-change-6435aa5b5088'
   }
@@ -760,17 +799,5 @@ export const dataStackSolutions = [
   {
     name: 'Compare the Top 3 Style Guides and Set Them Up With ESLint',
     link: 'https://betterprogramming.pub/comparing-the-top-three-style-guides-and-setting-them-up-with-eslint-98ea0d2fc5b7'
-  },
-  {
-    name: 'VS Code: You dont need that extension',
-    link: 'https://www.roboleary.net/vscode/2020/08/05/dont-need-extensions.html'
-  },
-  {
-    name: 'Configurar EsLint y Prettier junto con VScode',
-    link: 'https://dev.to/mrluisfer/configurar-eslint-prettier-junto-con-vscode-3h00'
-  },
-  {
-    name: 'Setup ESLINT and PRETTIER in React app',
-    link: 'https://dev.to/knowankit/setup-eslint-and-prettier-in-react-app-357b'
   }
 ]
