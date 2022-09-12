@@ -34,15 +34,15 @@ export const data = [
   ],
   [
     ['Javascript', dataJavascript],
+    ['Hosting', dataHosting]
+  ],
+  [
+    ['Roadmap', dataRoadmap],
     ['Github (repositorios)', dataGithub]
   ],
   [
-    ['Paleta de colores', dataColorPallets],
-    ['Roadmap', dataRoadmap]
-  ],
-  [
     ['Code Challenges', dataCodeChallenges],
-    ['Hosting', dataHosting]
+    ['Paleta de colores', dataColorPallets]
   ],
   [
     ['Prototipo UI/UX', dataPrototyping],

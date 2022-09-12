@@ -1,5 +1,5 @@
 import { MoonIcon, SunIcon } from '@chakra-ui/icons'
-import { Center, IconButton, useColorMode, useColorModeValue } from '@chakra-ui/react'
+import { IconButton, useColorMode, useColorModeValue } from '@chakra-ui/react'
 import { AnimatePresence, motion } from 'framer-motion'
 
 const ButtonDarkMode = () => {
@@ -17,7 +17,8 @@ const ButtonDarkMode = () => {
           aria-label="Toggle theme"
           colorScheme={useColorModeValue('purple', 'orange')}
           icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
-          onClick={toggleColorMode}></IconButton>
+          onClick={toggleColorMode}
+        />
       </motion.div>
     </AnimatePresence>
   )

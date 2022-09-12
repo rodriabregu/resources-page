@@ -33,7 +33,7 @@ function App() {
         </Flex>
         <AboutSection />
         <Center>
-          <Button mb={'2'} onClick={() => scrollToSection('app')}>
+          <Button mb={'6'} onClick={() => scrollToSection('app')}>
             Up {<ArrowUpIcon />}
           </Button>
         </Center>
