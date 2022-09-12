@@ -4,7 +4,8 @@ import { scrollToSection } from './ToUpScroll'
 
 export const SummarySection = ({ titles }: { titles: string[] }) => {
   const { colorMode } = useColorMode()
-  const settingColor = colorMode === 'light' ? 'rgba(25,0,0,0.1)' : '#27272a'
+  const isLight = colorMode === 'light'
+  const settingColor = isLight ? 'rgba(25,0,0,0.1)' : '#27272a'
 
   return (
     <>
@@ -21,7 +22,8 @@ export const SummarySection = ({ titles }: { titles: string[] }) => {
           gap={2}
           w={{
             base: '100%',
-            md: 'auto'
+            md: '95%',
+            lg: 'auto'
           }}>
           {titles.map((title: string) => (
             <GridItem key={title} w="auto" h="10">
@@ -33,7 +35,7 @@ export const SummarySection = ({ titles }: { titles: string[] }) => {
                 cursor={'pointer'}
                 onClick={() => scrollToSection(title)}
                 _hover={{
-                  backgroundColor: colorMode === 'light' ? '#DBDBDB' : 'rgba(5,0,0,0.1)'
+                  backgroundColor: isLight ? '#DBDBDB' : 'rgba(5,0,0,0.1)'
                 }}>
                 {title}
               </Text>
