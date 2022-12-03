@@ -7,8 +7,8 @@ export function AboutSection() {
         <Heading as={'h3'} size={'md'} mb={'2'}>
           Próposito de esta página:
         </Heading>
-        Encontrarás recursos de toda índole relacionada al desarrollo. Tanto contenido frontend,
-        como backend, como frameworks, librerías, diseño, e inclusive sobre Job Hunting.
+        Recursos de toda índole relacionada al desarrollo. Tanto contenido frontend, como backend,
+        frameworks, librerías, diseño, e inclusive sobre Job Hunting.
         <br />
         El objetivo de todo esto, es la verdadera divulgación del conocimiento de manera totalmente
         gratuita y accesible para todos.

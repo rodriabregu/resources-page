@@ -114,6 +114,10 @@ export const dataFrontend = [
   {
     name: 'Defensive CSS (best tips for problems css)',
     link: 'https://defensivecss.dev/'
+  },
+  {
+    name: 'Specificity Calculator',
+    link: 'https://specificity.keegan.st/'
   }
 ]
 
@@ -209,11 +213,11 @@ export const dataLearning = [
   },
   {
     name: 'El Tutorial de JavaScript Moderno 🆓',
-    link: 'https://aprendejavascript.dev/'
+    link: 'https://es.javascript.info/'
   },
   {
     name: '¡Aprende JavaScript! (in process) 🆓',
-    link: 'https://es.javascript.info/'
+    link: 'https://aprendejavascript.dev/'
   },
   {
     name: 'Platzi 💰',
@@ -415,6 +419,10 @@ export const dataCodeChallenges = [
   {
     name: 'Ace Frontend',
     link: 'https://www.acefrontend.com/'
+  },
+  {
+    name: 'CSSBattle',
+    link: 'https://cssbattle.dev/'
   }
 ]
 
