@@ -307,6 +307,10 @@ export const dataHosting = [
     link: 'https://fly.io/'
   },
   {
+    name: 'Koyeb 🆓 (Heroku alternative)',
+    link: 'https://www.koyeb.com/'
+  },
+  {
     name: 'CloudFlare 🆓',
     link: 'https://www.cloudflare.com/'
   },
