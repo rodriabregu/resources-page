@@ -745,6 +745,14 @@ export const dataAPI = [
   {
     name: 'Fake API para testing y prototipado',
     link: 'http://jsonplaceholder.typicode.com/'
+  },
+  {
+    name: 'Random Quotes API',
+    link: 'https://api.quotable.io/random'
+  },
+  {
+    name: 'MyAnimeList API',
+    link: 'https://docs.api.jikan.moe/'
   }
 ]
 
